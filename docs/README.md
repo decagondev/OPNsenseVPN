@@ -200,7 +200,7 @@ This downloads: `developer1-udp-1194-aws.ovpn`
 
 ```mermaid
 graph TD
-    A[Developer Laptop with VPN Client] -->|OpenVPN UDP 1194| B[OPNsense EC2 - WAN (10.0.1.10)]
+    A[Developer Laptop with VPN Client] -->|OpenVPN UDP 1194| B["OPNsense EC2 - WAN (10.0.1.10)"]
     B -->|VPN Tunnel 10.8.0.0/24| A
     B -->|LAN 10.0.2.5| C[Private Subnet 10.0.2.0/24]
     C --> D1[API Server 1 - 10.0.2.10]
