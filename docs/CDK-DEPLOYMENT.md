@@ -13,7 +13,7 @@ This CDK stack builds the **Linux + OpenVPN** version of the VPN infrastructure 
 
 ```mermaid
 graph TD
-  A[Developer Laptop] -- OpenVPN --> B[Ubuntu OpenVPN EC2 (Public Subnet)]
+  A[Developer Laptop] -- OpenVPN --> B["Ubuntu OpenVPN EC2 (Public Subnet)"]
   B -->|NAT + Route| C[Private Subnet]
   C --> D[API EC2 #1]
   C --> E[API EC2 #2]
